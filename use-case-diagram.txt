@@ -1,0 +1,45 @@
+@startuml
+left to right direction
+actor "Student / Staff" as User
+actor "Maintenance Staff" as Tech
+actor "Administrator / Supervisor" as Admin
+
+rectangle "CampusFIX System" {
+  usecase "Log In" as UC1
+  usecase "Log Out" as UC2
+  usecase "Submit Maintenance Request" as UC3
+  usecase "View Submitted Requests" as UC4
+  usecase "Check Request Status" as UC5
+  usecase "Search and Filter Requests" as UC6
+  usecase "Set Request Priority" as UC7
+  usecase "Assign Maintenance Worker" as UC8
+  usecase "Update Request Status" as UC9
+  usecase "Record Resolution Notes" as UC10
+  usecase "Close Maintenance Request" as UC11
+  usecase "View Maintenance Dashboard" as UC12
+  usecase "View Request History" as UC13
+}
+User -- UC1
+User -- UC2
+User -- UC3
+User -- UC4
+User -- UC5
+User -- UC6
+User -- UC13
+Tech -- UC1
+Tech -- UC2
+Tech -- UC4
+Tech -- UC8
+Tech -- UC9
+Tech -- UC10
+Tech -- UC13
+Admin -- UC1
+Admin -- UC2
+Admin -- UC4
+Admin -- UC6
+Admin -- UC7
+Admin -- UC8
+Admin -- UC11
+Admin -- UC12
+Admin -- UC13
+@enduml
