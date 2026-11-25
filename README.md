@@ -13,8 +13,11 @@ The design of CampusFIX is influenced by the following constraints:
 5. Maintenance constraint: The system should be organised into separate components so that future changes can be made without unnecessarily affecting the entire application.
 
 ## 3. Architecture Diagram
-Architecture pattern: Three-Tier Layered Architecture
-The architecture diagram will show how the presentation, application and data layers work together to support CampusFIX.
+
+The following diagram shows the main structure of CampusFIX using the Three-Tier Layered Architecture. It illustrates how users interact with the system, how the application processes requests and how information is stored.
+
+![CampusFIX Architecture Diagram](architecture-diagram.png)
+
 
 ## 4. pattern Choice
 Three-Tier Layered Architecture
